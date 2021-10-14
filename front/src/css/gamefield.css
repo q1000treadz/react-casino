@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: none;
+}
+.Block {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1250px;
+}
+.Header {
+    background: #38414e;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0 20px;
+    height: 54px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    box-shadow: 0 2px 3px -2px rgb(33 38 47 / 70%);
+    z-index: 2;
+}
+
+.gameName {
+    display: -webkit-flex;
+    display: flex;
+    font-size: 16px;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    padding-right: 30px;
+    margin-right: 15px;
+    padding-top:15px;
+}
+
+.Game {
+    min-height: 560px;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    position: relative;
+    touch-action: manipulation;
+}
+.Component {
+    width:calc(100% - 300px);
+}
+.mainGameBlock {
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    position: relative;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background: #272d39;
+    border-radius: 0 0 5px 0;
+    overflow: hidden;
+}

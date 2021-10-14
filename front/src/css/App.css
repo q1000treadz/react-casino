@@ -1,0 +1,67 @@
+.button1, .button2, .button3 {
+  border: none;
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+}
+.button1:hover, .button2:hover, .button3:hover, .buttonStart:hover {
+  color: #fff;
+  background: #405475;
+  tansition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+}
+.button1 {
+  background-color: #445163;
+}
+.button2 {
+  background-color: #4CAF50;
+}
+.button3 {
+  background-color: #f44336;
+}
+.buttonStart {
+  background-color: lightgreen;
+  width: 60px;
+  height: 40px;
+}
+
+.input1[type=number] {
+  background-color: rgb(250, 211, 211);
+  color: black;
+  width: 200px;
+  height: 44px;
+  font-size: 36px;
+  text-align: right;
+  border: none;
+}
+.loseBlock {
+  background: red;
+  width: 40%;
+  height: 600px;
+  margin: auto;
+  position: absolute;
+  opacity: 0.85;
+  top: 40px; left: 30%;
+  z-index: 3;
+}
+.winBlock {
+  background: green;
+  max-width: 400px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+}
+
+.mainBlock {
+  background: rgb(216, 6, 90);
+  
+  height: 800px;
+  margin: auto;
+  padding: 30px 30px;
+}
+div.mainBlock {
+  display: block;
+  text-align: center;
+  padding-top: 100px;
+}

@@ -1,0 +1,10 @@
+.CoefficientBlock1, .CoefficientBlock2 {
+  width: 75px;
+  height: 50px;
+}
+.CoefficientBlock1 {
+  background-color: white;
+}
+.CoefficientBlock2 {
+  background-color: pink;
+}

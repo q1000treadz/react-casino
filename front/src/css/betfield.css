@@ -1,0 +1,248 @@
+.buttonIn {
+    width: 200px;
+    position: relative;
+}
+  
+.inputt {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    outline: none;
+    height: 30px;
+    border-radius: 5px;
+}
+.buttonn {
+    width: 50px;
+}
+/*
+.buttonn {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    right: 0px;
+    z-index: 2;
+    border: none;
+    top: 2px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #1e90ff;
+    transform: translateX(2px);
+    width: 30px;
+}
+.buttonnn {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    right: 30px;
+    z-index: 2;
+    border: none;
+    top: 2px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #1e90ff;
+    transform: translateX(2px);
+    width: 30px;
+}*/
+.startgamebutton {
+    background-color: #1cd422;
+    border: none;
+    color: white;
+    padding: 16px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+  }
+  .startgamebutton:hover {
+    color: #fff;
+    background: rgb(221, 15, 170);
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+  }
+
+
+  .options_Buttons__APIuR {
+    display: -webkit-flex;
+    display: flex;
+}
+.pokerBetComponent {
+    width: 100%;
+    display: flex;
+    width: 310px;
+    -webkit-flex: none;
+    flex: none;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.pokerBet {
+    width: 100%;
+    padding: 20px;
+    border-radius: 0 0 0 5px;
+    background: #2f3542;
+    -webkit-flex: auto;
+    flex: auto;
+    box-shadow: 2px 0 3px -2px rgb(33 38 47 / 70%);
+    position: relative;
+    z-index: 1;
+}
+.betComponent {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.betForm {
+    -webkit-flex: auto;
+    flex: auto;
+}
+
+
+
+
+
+.bet_BetSize__2AatD {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.bet_Label__2-fPp {
+    display: inline-flex;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.forms_form-label__slXLj {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 14px;
+    color: rgb(170, 176, 189);
+    user-select: none;
+    touch-action: manipulation;
+}
+
+
+.bet_InputWrapper__29k6m {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.bet_BetSize__2AatD.bet_withOutRadius__3euJz .input-field {
+    border-radius: 5px 5px 0px 0px;
+}
+.input-field {
+    height: 44px;
+    padding: 0 12px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    background: #222731;
+    border: 2px solid transparent;
+    font-family: rubik,system-ui,-apple-system,segoe ui,Roboto,helvetica neue,Arial;
+    touch-action: manipulation;
+}
+.control_ControlBtn__2Mzim, .control_ControlButtons__2jngX {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.control_ControlBtn__2Mzim {
+    width: 32px;
+    border-radius: 3px;
+    background: rgb(52, 58, 72);
+    margin-left: 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(130, 143, 154);
+    height: 100%;
+}
+.control_ControlButtons__2jngX {
+    position: absolute;
+    height: 26px;
+    top: 50%;
+    right: 7px;
+    bottom: 0px;
+    transform: translateY(-50%);
+}
+.control_ControlClear__qBf59 {
+    font-size: 10px;
+    color: rgb(127, 133, 150);
+    opacity: 0;
+    width: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control_FastButtons__XqqH1 {
+    flex-wrap: nowrap;
+    border-top: 1px solid rgb(47, 53, 66);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: rgb(37, 43, 52);
+    border-radius: 0px 0px 5px 5px;
+    overflow: hidden;
+}
+.control_FastBtn__Nj7lQ {
+    flex: 10 0 auto;
+    font-size: 11px;
+    line-height: 12px;
+    color: rgb(130, 143, 154);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border: none;
+    background: rgb(39, 45, 57);
+    outline: none;
+    font-weight: 400;
+}
+.button_Button__1W86R:not(:disabled) {
+    cursor: pointer;
+}
+.button_Button__1W86R {
+    color: #fff;
+    display: inline-block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: background-color .2s linear;
+}
+button[role=button], button[type=button] {
+    cursor: pointer;
+}
+.button_play__-Cbjj {
+    color: #fff;
+    width: 100%;
+    height: 58px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-size: 16px;
+}
+.button_green__NmQms {
+    color: rgba(0,0,0,.65);
+    background-color: #18bb19;
+}
