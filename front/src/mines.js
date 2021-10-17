@@ -84,10 +84,8 @@ class Field extends React.Component {
         if (status === 3) {
           this.setState({ canEdit: false });
 
-          this.props.endGame();
-          //setTimeout(()=> {console.log("Sd");}, 2000);
-          //this.setState({ canEdit: false });
-          // setTimeout(this.props.endGame, 2000);
+            console.log(res);
+            this.props.endGame(res);
         }
         else {
           this.setState(prevState => ({ current: prevState.current + 1 }));
@@ -106,6 +104,7 @@ class Field extends React.Component {
     return (
       <div>
           {arr}
+          {takeButton}
           </div>
     );
   }
@@ -165,7 +164,8 @@ export class Mines extends React.Component {
         .catch(err => console.log(err));
     }
   }
-  endGame() {
+  endGame(res = undefined) {
+    if(res == undefined) {
     console.log("ASDDDSADDSAD");
     let sendObj = {
       mineId: this.state.mineid
@@ -183,6 +183,10 @@ export class Mines extends React.Component {
 
       })
       .catch(err => console.log(err));
+    } else {
+      this.props.editBalance(res.balance);
+      this.setState({ activegame: false, bet: 0, mineid: 0, value: 3 });
+    }
   }
   render() {
     let chooser = <input className="input1" type="number" id="mines" name="mines" min="1" max="24" onChange={this.handleChangeMines} value={this.state.value}></input>;

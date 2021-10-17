@@ -4,7 +4,7 @@
   width: 50px;
   height: 50px;
 }
-.button1:hover, .button2:hover, .button3:hover, .buttonStart:hover {
+.button1:hover, .buttonStart:hover {
   color: #fff;
   background: #405475;
   tansition: all .3s linear;
