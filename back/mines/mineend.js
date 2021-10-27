@@ -1,9 +1,9 @@
 const { createconnection, mysqlquery } = require('../mysql1');
 const { generateMines, calculateCoefficient, generateOutputArray, makeSteps, getOpenMinesNumber, checkLoseMine, getMinesNumber } = require('./mines');
 module.exports = {
-    endMineGame: async function (connection, mineId) {
-        let upd = await mysqlquery(connection, "UPDATE mines SET active='0' WHERE id='" + mineId + "';");
-        let _gameInfo = await mysqlquery(connection, "SELECT * FROM mines WHERE id='" + mineId + "';");
+    endMineGame: async function (connection, mineid) {
+        let upd = await mysqlquery(connection, "UPDATE mines SET active='0' WHERE id='" + mineid + "';");
+        let _gameInfo = await mysqlquery(connection, "SELECT * FROM mines WHERE id='" + mineid + "';");
         let gameInfo = _gameInfo[0];
         if (gameInfo != undefined) {
             let arr = makeSteps(gameInfo.mines);

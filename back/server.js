@@ -45,6 +45,7 @@ app.post('/mineinfo', function (req, res) {
   if (!req.body.userid) res.json(undefined);
   (async () => {
     let output = await getMineInfo(connection, req.body.userid);
+    console.log(output);
     res.json(output);
   })();
 });
@@ -59,18 +60,18 @@ app.post('/startgame', function (req, res) {
 });
 
 app.post('/clickmine', function (req, res) {
-  if (!(req.body.number && req.body.mineId)) res.json(undefined);
+  if (!(req.body.number && req.body.mineid)) res.json(undefined);
   (async () => {
-    let output = await mineClick(connection, req.body.number, req.body.mineId);
+    let output = await mineClick(connection, req.body.number, req.body.mineid);
     console.log(output);
     res.json(output);
   })();
 });
 
 app.post('/endgame', function (req, res) {
-  if (!req.body.mineId) res.json(undefined);
+  if (!req.body.mineid) res.json(undefined);
   (async () => {
-    let output = await endMineGame(connection, req.body.mineId);
+    let output = await endMineGame(connection, req.body.mineid);
     console.log(output);
     res.json(output);
   })();
@@ -85,6 +86,7 @@ app.post('/videopoker/pokerinfo', function (req, res) {
     res.json(output);
   })();
 });
+
 app.post('/videopoker/startgame', function (req, res) {
   if (!(req.body.userid && req.body.bet)) res.json(undefined);
   (async () => {
@@ -93,11 +95,8 @@ app.post('/videopoker/startgame', function (req, res) {
     res.json(output);
   })();
 });
+
 app.post('/videopoker/changecards', function (req, res) {
-  console.log("changecards!!!!!!!!!");
-  let _userId = req.body.userid;
-  let _pokerId = req.body.pokerid;
-  let choosen = req.body.choosen;
   if (!(req.body.userid && req.body.pokerid && req.body.choosen)) res.json(undefined);
   (async () => {
     let output = await changePokerCards(connection, req.body.userid, req.body.pokerid, req.body.choosen);

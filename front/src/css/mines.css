@@ -1,5 +1,70 @@
+.minesSquareField {
+  display: -webkit-block;
+  display: block;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.minesSquareFieldRow {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
 .coefficientBlockMines {
+  display: flex;
   background-color: #2c323f;
-  padding: 20px 0;
+  padding: 20px 10px;
   border-radius: 0 0 5px 0;
+  width: 100%;
+  margin-top: auto;
+margin-bottom: 0px;
+  max-height: 90px;
+}
+.hits_HitRow__2xXXQ {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.hits_Item__1SvQF {
+  max-width: 70;
+  width: 100%;
+  border: 1px solid #394050;
+  border-radius: 3px;
+  padding: 5px 7px;
+  color: #828f9a;
+  background-color: #2c323f;
+  z-index: 2;
+  transition: all .3s;
+  white-space: nowrap;
+  max-width: 85px;
+  position: relative;
+}
+.hits_Item__1SvQF.hits_current__1ROZd {
+color: #fff;
+background: #62ca5b;
+border-color: #62ca5b;
+}
+.hits_Item__1SvQF .hits_coeff__1lz94 {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: rubik,system-ui,-apple-system,segoe ui,Roboto,helvetica neue,Arial;
+  margin-bottom: 3px;
+}
+
+.hits_Item__1SvQF .hits_hit__2qdbe {
+  font-size: 10px;
 }

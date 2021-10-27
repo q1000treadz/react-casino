@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Mines } from "./mines"
+import Mines from "./mines"
 import { VideoPoker } from "./videopoker"
 import { callBackendAPI } from './api'
 import {
@@ -11,6 +11,18 @@ import {
 } from "react-router-dom";
 import { Crash } from './crash';
 import './css/grid.css';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import { mineReducer } from './reducer/mineReducer';
+
+const store = createStore(
+    mineReducer,
+    applyMiddleware(thunk)
+)
+
+
+
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -50,13 +62,13 @@ class App extends React.Component {
                     <div className="header1">
                         <Link to="/"><button type="button" id="b1" class="homebutton">HOME</button></Link>
                         <div className="userprofile">
-                                <div className="balancediv">
-                                    Balance:
-                                </div>
-                                <div className="balancestatediv">
-                                    {this.state.balance}
-                                </div>
-                                {this.state.name}
+                            <div className="balancediv">
+                                Balance:
+                            </div>
+                            <div className="balancestatediv">
+                                {this.state.balance}
+                            </div>
+                            {this.state.name}
                         </div>
                     </div>
 
@@ -71,7 +83,7 @@ class App extends React.Component {
                                     <Link to="/crash"><button type="button" id="b3" class="small_btn">crash</button></Link>
                                 </li>
                                 <li className="buttonListElem">
-                                    <Link to="/videopoker"><button type="button" id="b4" class="small_btn">videopoker</button></Link>
+                                    <Link to="/videopoker"><button type="button" id="b4" class="small_btn">{`video\npoker`}</button></Link>
                                 </li>
                             </ui>
                         </nav>
@@ -79,7 +91,9 @@ class App extends React.Component {
                     <Switch>
                         <div className="article1">
                             <Route path="/mines">
-                                <Mines editBalance={this.editBalance} />
+                                <Provider store={store}>
+                                    <Mines editBalance={this.editBalance} />
+                                </Provider>
                             </Route>
                             <Route path="/crash">
 
